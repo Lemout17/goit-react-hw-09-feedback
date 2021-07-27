@@ -1,0 +1,24 @@
+.container {
+}
+
+.list {
+  margin-top: 10px;
+}
+.item {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+
+  &:first-child {
+    color: green;
+  }
+  &:nth-child(2) {
+    color: grey;
+  }
+  &:nth-child(3) {
+    color: red;
+  }
+}
+.text {
+  margin-right: 10px;
+}

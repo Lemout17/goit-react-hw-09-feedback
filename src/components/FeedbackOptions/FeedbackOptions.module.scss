@@ -1,0 +1,35 @@
+.container {
+  margin: 15px 0;
+}
+
+.btn {
+  padding: 4px 10px;
+  margin-right: 10px;
+
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: rgb(107, 208, 221);
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
+  transition: box-shadow 250ms linear;
+
+  &:first-child {
+    background-color: green;
+  }
+  &:nth-child(2) {
+    background-color: grey;
+  }
+  &:nth-child(3) {
+    background-color: red;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:active {
+    background-color: rgb(159, 184, 216);
+    box-shadow: 2px 5px 2px 0 rgb(0 0 0 / 0.5);
+  }
+}

@@ -1,0 +1,21 @@
+body {
+  background-image: url(./bg.jpg);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
