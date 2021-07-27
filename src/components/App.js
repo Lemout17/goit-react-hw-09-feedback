@@ -1,4 +1,4 @@
-import { Component, useState } from 'react';
+import { useState } from 'react';
 import Section from './Section';
 import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
@@ -35,21 +35,10 @@ const App = () => {
     }
   };
 
-  const object = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
-  };
-
-  const options = Object.keys(object);
-
   return (
     <div className={s.container}>
       <Section title={'Please leave feedback'}>
-        <FeedbackOptions
-          options={options}
-          onLeaveFeedback={increment}
-        ></FeedbackOptions>
+        <FeedbackOptions onLeaveFeedback={increment}></FeedbackOptions>
       </Section>
 
       {totalFeedback > 0 ? (
